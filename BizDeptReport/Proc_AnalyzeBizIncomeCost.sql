@@ -1,4 +1,6 @@
 
+--Created by wu.chen at 2014-02-08
+
 if OBJECT_ID(N'Proc_AnalyzeBizIncomeCost',N'P') is not null
 begin
 	drop procedure Proc_AnalyzeBizIncomeCost
@@ -1273,7 +1275,7 @@ begin
 					and
 					ApplyDate > rule1.ApplyDate
 				order by
-					ApplyDate desc
+					ApplyDate
 				) rule2
 		)
 		insert into #FeeCalcResult
